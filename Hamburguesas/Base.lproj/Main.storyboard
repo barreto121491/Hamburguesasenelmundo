@@ -1,25 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hamburguesas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh6-IJ-8jg">
+                                <rect key="frame" x="191" y="579" width="388" height="48"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="“Quiero una hamburguesa!!!”"/>
+                                <connections>
+                                    <action selector="obtenerHamburguesa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y8Z-ol-221"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hamburguesa" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYO-sT-OCi">
+                                <rect key="frame" x="268" y="400" width="232" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pais" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6W-1s-hfh">
+                                <rect key="frame" x="277" y="271" width="215" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="vh6-IJ-8jg" secondAttribute="trailing" constant="169" id="2oT-ey-5cy"/>
+                            <constraint firstItem="D6W-1s-hfh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="257" id="6h9-9R-105"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LYO-sT-OCi" secondAttribute="trailing" constant="248" id="8pr-fq-5mS"/>
+                            <constraint firstItem="LYO-sT-OCi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="248" id="IXF-EZ-g6x"/>
+                            <constraint firstItem="vh6-IJ-8jg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="171" id="YDK-AN-OJQ"/>
+                            <constraint firstItem="LYO-sT-OCi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="380" id="dp0-iI-qle"/>
+                            <constraint firstItem="vh6-IJ-8jg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="559" id="eSA-KP-dxS"/>
+                            <constraint firstItem="D6W-1s-hfh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="251" id="lCu-HU-srC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D6W-1s-hfh" secondAttribute="trailing" constant="256" id="uVS-nb-Mst"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="muestraHamburguesa" destination="LYO-sT-OCi" id="o98-ya-TLl"/>
+                        <outlet property="muestraPais" destination="D6W-1s-hfh" id="UAD-ZA-h1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="563" y="620"/>
         </scene>
     </scenes>
 </document>

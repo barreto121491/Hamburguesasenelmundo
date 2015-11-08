@@ -12,6 +12,7 @@
 		28AA89AD1BEEDF250076F4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AA89AB1BEEDF250076F4A0 /* Main.storyboard */; };
 		28AA89AF1BEEDF250076F4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28AA89AE1BEEDF250076F4A0 /* Assets.xcassets */; };
 		28AA89B21BEEDF250076F4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28AA89B01BEEDF250076F4A0 /* LaunchScreen.storyboard */; };
+		28AA89BA1BEEEC490076F4A0 /* Datos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28AA89B91BEEEC490076F4A0 /* Datos.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		28AA89AE1BEEDF250076F4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28AA89B11BEEDF250076F4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28AA89B31BEEDF250076F4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28AA89B91BEEEC490076F4A0 /* Datos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Datos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				28AA89A71BEEDF250076F4A0 /* AppDelegate.swift */,
 				28AA89A91BEEDF250076F4A0 /* ViewController.swift */,
+				28AA89B91BEEEC490076F4A0 /* Datos.swift */,
 				28AA89AB1BEEDF250076F4A0 /* Main.storyboard */,
 				28AA89AE1BEEDF250076F4A0 /* Assets.xcassets */,
 				28AA89B01BEEDF250076F4A0 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			files = (
 				28AA89AA1BEEDF250076F4A0 /* ViewController.swift in Sources */,
 				28AA89A81BEEDF250076F4A0 /* AppDelegate.swift in Sources */,
+				28AA89BA1BEEEC490076F4A0 /* Datos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				28AA89B81BEEDF250076F4A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
